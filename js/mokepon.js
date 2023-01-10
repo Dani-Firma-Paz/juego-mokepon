@@ -1,9 +1,19 @@
 alert("Bienvenidos a Mokepon");
 
+let ataqueJugador
+
 function iniciarJuego() {
     let botonMascotaJugador = document.getElementById('boton-mascota');
 
-botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador);
+    botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador);
+
+    let botonFuego = document.getElementById('boton-fuego')
+    botonFuego.addEventListener('click', ataqueFuego)
+    let botonAgua = document.getElementById('boton-agua')
+    botonFuego.addEventListener('click', ataqueAgua)
+    let botonTierra = document.getElementById('boton-tierra')
+    botonFuego.addEventListener('click', ataqueTierra)
+
 }
 
 function seleccionarMascotaJugador() {
@@ -26,7 +36,7 @@ function seleccionarMascotaJugador() {
 }
 
 function seleccionarMascotaEnemigo() {
-    let ataqueAleatorio = aleatorio(1,3)
+    let ataqueAleatorio = aleatorio(0, 4)
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if (ataqueAleatorio == 1) {
@@ -39,10 +49,25 @@ function seleccionarMascotaEnemigo() {
 
 }
 
+function ataqueFuego() {
+    ataqueJugador = 'FUEGO'
+    alert(ataqueJugador)
+}
+function ataqueAgua() {
+    ataqueJugador = 'AGUA'
+    alert(ataqueJugador)
+}
+
+function ataqueTierra() {
+    ataqueJugador = 'TIERRA'
+    alert(ataqueJugador)
+}
+
+
+
 function aleatorio(max, min) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
-
 
 
 //para escuchar todo lo que pase en el navegador
