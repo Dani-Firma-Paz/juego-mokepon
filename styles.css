@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root {
+    --lettersColor: #FFA3FD;
+    --black: #191825;
+    --third-color: #E384FF;
+    --details-color: #865DFF;
+    --white: white;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+}
+
+#boton-mascota {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid var(--details-color);
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    background-color: var(--third-color);
+}
+
+input {
+    display: none;
+}
+
+.titulo {
+    color: var(--lettersColor);
+    font-family:'Poppins', sans-serif;
+    font-size: 60px;
+    text-decoration: dotted;
+}
+
+.subtitulo {
+    color: var(--third-color);
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+
+#seleccionar-mascota {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon {
+    width: 280px;
+    height: 220px;
+    background: var(--details-color);
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: white;
+    display: flex;
+    color: var(--primary-color);
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+/*Segunda parte del juego - Elegir mascota*/
+
+#seleccionar-ataque {
+    background-color: var(--third-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--details-color);
+    font-family:'Poppins', sans-serif;
+    font-size: 60px;
+}
+.subtitle {
+    color: var(--black);
+    font-family:'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+p {
+    color: var(--white);
+}
+
+.boton-de-ataque {
+    width: 150px;
+    height: 125px;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+    background-color: var(--details-color);
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+#mensajes {
+    width: 280px;
+    background: var(--lettersColor);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
