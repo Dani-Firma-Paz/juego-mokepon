@@ -15,7 +15,7 @@ body {
 }
 
 #boton-mascota {
-    width: 200px;
+    width: 150px;
     height: 60px;
     border-radius: 20px;
     background: transparent;
@@ -23,7 +23,7 @@ body {
     color: var(--white);
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 45px;
+    margin-top: 40px;
     background-color: var(--third-color);
 }
 
@@ -36,12 +36,14 @@ input {
     font-family:'Poppins', sans-serif;
     font-size: 60px;
     text-decoration: dotted;
+    margin-top: 5px;
 }
 
 .subtitulo {
     color: var(--third-color);
     font-size: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #seleccionar-mascota {
@@ -93,11 +95,14 @@ input {
     color: var(--details-color);
     font-family:'Poppins', sans-serif;
     font-size: 60px;
+    margin-top: 5px;
 }
 .subtitle {
     color: var(--black);
     font-family:'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 p {
