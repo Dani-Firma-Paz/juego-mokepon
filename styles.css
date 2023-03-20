@@ -72,7 +72,7 @@ input {
 
 }
 
-.tarjetas {
+.tarjetas .tarjetas-ataque {
     display: flex;
     gap: 10px;
 }
@@ -136,4 +136,27 @@ p {
     border: none;
     color: var(--black);
     font-family: 'Poppins', sans-serif;
+}
+
+.ataque {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: var(--white);
+}
+
+#vidas-jugador #vidas-enemigos {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador .ataques-enemigo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 350px) {
+    .tarjetas .tarjetas-ataques {
+        flex-direction: column;
+    }
 }

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>MOKEPON!</title>
+    <title>MOKECATS!</title>
 </head>
 
 <body>
     
     <section id="seleccionar-mascota">
-        <h1 class="titulo">MOKEPON!</h1>
+        <h1 class="titulo">MOKECATS!</h1>
         
         <h2 class="subtitulo">Elige a tu mascota:</h2>
 
@@ -58,11 +58,11 @@
 
     <!--Segunda Sección-->
     <section id="seleccionar-ataque">
-        <h1 class="title">MOKEPON!</h1>
+        <h1 class="title">MOKECATS!</h1>
 
         <h2 class="subtitle">Elige tu ataque</h2>
 
-        <div>
+        <div class="tarjetas-ataque">
             <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
             <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
             <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
@@ -76,11 +76,21 @@
                 </section>
         </div>
 
-        <div>
-            <div id="ataques-del-juegador"></div>
-            <div id="ataques-del-enemigo"></div>
-            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>La mascota del enemigo <span id="mascota-enemigo"></span> tiene <span id="vidas-enemigo">3</span> vidas</p>
+        <div class="ataque">
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-del-juegador"></div>
+            </div>
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-del-enemigo"></div>
+            </div>
+            
+            
+            
+            
         <!--<p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>-->
         </div>
     </section>
